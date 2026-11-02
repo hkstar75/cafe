@@ -18,7 +18,7 @@ tab1, tab2, tab3 = st.tabs(["소개", "메뉴", "대시보드"])
 # [탭 1] 카페 소개
 with tab1:
     st.header("🏡 카페 소개")
-    st.image(r".\image\cafe1.jpg", width=600)
+    st.image("image/cafe1.jpg", width=600)
     st.write("**뚱이 내리는 고요하고 맑은 커피.**")
     st.write("매일 아침 직접 로스팅한 원두로 일상의 작은 휴식을 제공합니다.")
 
