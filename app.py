@@ -6,7 +6,7 @@ st.set_page_config(page_title="카페 통합 시스템", layout="wide")
 st.title("☕ 동네 카페 통합 시스템")
 
 # 2. 데이터 불러오기 및 날짜 데이터 가공  df = data frame   
-df = pd.read_excel('cafe_sales_data.xlsx')
+df = pd.read_excel('cafe_sales_data.xlsx', engine='openpyxl')
 df['결제일자'] = pd.to_datetime(df['결제일자']) 
 df['월'] = df['결제일자'].dt.month
 df['주'] = df['결제일자'].dt.isocalendar().week
